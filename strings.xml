@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Nahwu Dan Shorof</string>
+    <string name="label_menuutama">Menu Utama</string>
+    <string name="title_activity_menu_nahwu">MenuNahwu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="TabelNahwu">
+        create table TabelNahwu(
+        id integer primary key autoincrement,
+        kaidah_nahwu text,
+        teori text,
+        gambar_tabel_nahwu text);
+    </string>
+
+    <string name="TabelShorof">
+        create table TabelShorof(
+        id integer primary key autoincrement,
+        kaidah_shorof text,
+        teori text,
+        gambar_tabel_shorof text);
+    </string>
+
+    <string name="TabelSoal">
+        create table TabelSoal(
+        id_soal integer primary key autoincrement,
+        soal text,
+        A text,
+        B text,
+        C text,
+        D text);
+    </string>
+
+    <string name="TabelJawaban">
+        create table TabelJawaban(
+        id_jawaban integer primary key autoincrement,
+        jawaban text,
+        id_soal integer);
+    </string>
+
+    <string name="TabelMufrodats">
+        create table TabelMufrodats(
+        id integer primary key autoincrement,
+        kosakata text,
+        arti text,
+        kategori text);
+    </string>
+
+    <string name="hapustabel">
+        drop table if exists TabelNahwu;
+        drop table if exists TabelShorof;
+        drop table if exists TabelSoal;
+        drop table if exists TabelJawaban;
+        drop table if exists TabelMufrodats;
+    </string>
+    <string name="title_activity_menu_tamrinats">MenuTamrinats</string>
+    <string name="title_activity_menu_shorof">MenuShorof</string>
+    <string name="title_activity_menu_mufrodats">MenuMufrodats</string>
+</resources>
